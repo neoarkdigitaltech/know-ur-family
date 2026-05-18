@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories & Insights | Know Your Family</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Tiro+Tamil:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .category-nav { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 4rem; }
+        .category-pill { padding: 0.8rem 1.5rem; background: var(--white); border: 1px solid rgba(27,77,74,0.1); border-radius: var(--border-radius-pill); color: var(--deep-teal); text-decoration: none; font-weight: 500; transition: all 0.2s; }
+        .category-pill:hover, .category-pill.active { background: var(--deep-teal); color: var(--white); box-shadow: 0 5px 15px rgba(27,77,74,0.1); }
+    </style>
+</head>
+<body>
+    <nav class="navbar" style="position: static; background: var(--bg-base); border-bottom: 1px solid rgba(27,77,74,0.1);">
+        <a href="index.html" class="logo">Know Your Family</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog-index.html">Stories</a>
+            <a href="contact.html" class="btn-primary-sm">Contact Us</a>
+        </div>
+    </nav>
+
+    <main class="bg-base">
+        <section class="section text-center" style="padding-bottom: 4rem;">
+            <div class="container gs-fade">
+                <h1 style="font-family: 'Playfair Display', serif; font-size: 4rem; color: var(--deep-teal);">Stories & Insights</h1>
+                <p class="text-muted" style="font-size: 1.2rem; margin-top: 1rem;">Exploring Tamil migration, culture, and preservation.</p>
+            </div>
+        </section>
+        
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <!-- Blog Categories -->
+                <div class="category-nav gs-fade">
+                    <a href="#" class="category-pill active">All Stories</a>
+                    <a href="#" class="category-pill">Tamil Migration History</a>
+                    <a href="#" class="category-pill">Cultural Traditions & Festivals</a>
+                    <a href="#" class="category-pill">Family Preservation Tips</a>
+                    <a href="#" class="category-pill">Real Family Stories</a>
+                </div>
+                
+                <!-- Blog Grid -->
+                <div class="blog-grid">
+                    <a href="blog.html" class="blog-card gs-fade">
+                        <div class="blog-img" style="background-image: url('images/blog_migration.png');"></div>
+                        <div class="blog-content">
+                            <span class="text-gold" style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Migration History</span>
+                            <h3 style="margin-top: 0.5rem;">The Story of Tamil Migration to Malaysia</h3>
+                            <p class="text-muted">Discover the historical waves that brought our ancestors across the sea.</p>
+                            <span class="read-more">Read Editorial →</span>
+                        </div>
+                    </a>
+                    
+                    <a href="blog.html" class="blog-card gs-fade">
+                        <div class="blog-img" style="background-image: url('images/blog_generations.png');"></div>
+                        <div class="blog-content">
+                            <span class="text-gold" style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Preservation Tips</span>
+                            <h3 style="margin-top: 0.5rem;">Why Younger Generations Are Losing Touch</h3>
+                            <p class="text-muted">And what we can do to bridge the cultural gap.</p>
+                            <span class="read-more">Read Editorial →</span>
+                        </div>
+                    </a>
+                    
+                    <a href="blog.html" class="blog-card gs-fade">
+                        <div class="blog-img" style="background-image: url('images/blog_identity.png');"></div>
+                        <div class="blog-content">
+                            <span class="text-gold" style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Cultural Traditions</span>
+                            <h3 style="margin-top: 0.5rem;">What Your Family History Reveals</h3>
+                            <p class="text-muted">How ancestral stories shape our modern identity.</p>
+                            <span class="read-more">Read Editorial →</span>
+                        </div>
+                    </a>
+                    
+                    <!-- Placeholder Card -->
+                    <a href="#" class="blog-card gs-fade">
+                        <div class="blog-img" style="background: rgba(27,77,74,0.1); display: flex; align-items: center; justify-content: center;">
+                            <span style="color: var(--deep-teal); font-family: 'Playfair Display', serif; font-size: 1.5rem;">Coming Soon</span>
+                        </div>
+                        <div class="blog-content">
+                            <span class="text-gold" style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Real Stories</span>
+                            <h3 style="margin-top: 0.5rem;">[FILLER - Actual Blog Post]</h3>
+                            <p class="text-muted">More incredible family histories will be published here soon.</p>
+                            <span class="read-more">Read Editorial →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--deep-teal);">Know Your Family</h3>
+            <p class="text-muted mt-2">Preserving Tamil legacy for the next generation.</p>
+            <p class="text-muted mt-4" style="font-size: 0.85rem;">&copy; 2026 knowurfamily.com</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
